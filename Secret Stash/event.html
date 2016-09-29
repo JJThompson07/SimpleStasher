@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Stasher</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Affordable Savings calculator for a particular future event">
+		<meta name="keywords" content="calculator, saving, stash, piggy bank, money, event, holiday, party, house, car, afford, affordable">
+
+		<link rel="stylesheet" href="CSS/reset.css">
+		<link rel="stylesheet" href="CSS/lanes.css">
+		<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+	<header>
+		<a href="index.html"><h1 class="title">Simple Stasher</h1></a>
+		<h4 id="tagline">Afford Without Realising</h4>
+
+	</header>
+
+	<nav class="hide">
+		<a href="index.html">Home</a>
+		<a href="holiday.html">Holiday</a>
+		<a href="car.html">Car</a>
+		<a href="house.html">House</a>
+		<a href="event.html">Event</a>
+	</nav>
+
+	<section id="trigger">
+		<img class="trigger" src="images/trigger.png">
+	</section>
+
+	<section class="eaze">
+
+		<div id="eazer">
+			<ul class="fazes">
+				<li class="faze"><img id="eaze1" src="images/dj-party.jpg" alt="event 1"></li>
+                <li class="faze"><img id="eaze2" src="images/festival.jpeg" alt="event 2"></li>
+                <li class="faze"><img id="eaze3" src="images/dinner-party.jpg" alt="event 3"></li>
+
+				
+			</ul>
+			
+		</div>
+
+
+
+	</section>
+
+<!--  - - - - - - - - - - - - - - - - - CARSAVE - - - - - - - - - - - - - - - - - -  -->
+
+	<section class="eventsave">
+
+		<h1 class="pagename">Event</h1>
+		<h4>please make youre way down the page, filling in the information about the event you want and yourself,<br> to calculate your personalised 'Secret Stash' amount.</h4>
+
+		<h2 id="eventHeader" class="sub"> Your Event </h2>
+			<div class="event-initial">
+				<h5>
+					Event Name - <input class="initial" type="text"  id="event-name"> 
+			
+				</h5>
+				<h5>
+					Duration - <input class="initial" type="number"  id="event-duration"> days
+				</h5>
+
+				<h2 class="event-fullpay">Event Market Price</h2>
+				<h4>the value of the property</h4>
+				<h5>£ <input class="event-outrightpay" type="number"  id="event-fullpay"></h5>
+			</div>
+
+
+		<div class="pre-event">
+		<div class="six columns">
+			<h2>Initial Costs</h2>
+			<h4>fill this side for the initial costs <br> before the start of the event</h4>
+
+			<div class="holiday">
+				<h5>
+					Tickets - £<input class="costs" type="number" id="tickets">
+				</h5>
+				<h5>
+					Accommodation - £<input class="costs" type="number" name="accommodation" id="accommodation">
+				</h5>
+				<h5>
+					Transport - £<input class="costs" type="number" name="transport" id="transport">
+				</h5>
+				<h5 class="airport"> (To & From Event)
+				</h5>
+			</div>
+		</div>
+		<div class="six columns">	
+		
+			<h2>Expenses</h2>
+			<h4>How much you wish to spend whilst you are at the event</h4>
+		
+			
+
+			<div class="expenses">
+				<h5>
+					Day   
+					- £<input class="costs" type="number" name="days" id="days"> 
+					days -<input class="days" type="number" name="days-num" id="days-num">
+				</h5>
+				<h5>
+					Night
+					 - £<input class="costs" type="number" name="nights" id="nights">
+					days -<input class="days" type="number" name="nights-num" id="nights-num">
+
+				</h5>
+				<h5>
+					Drinks
+					 - £<input class="costs" type="number"  id="eventdrinks">
+					days -<input class="days" type="number" id="eventdrinks-num">
+
+				</h5>
+				<h5>
+					Food
+					 - £<input class="costs" type="number"  id="eventfood">
+					days -<input class="days" type="number"  id="eventfood-num">
+
+				</h5>
+				<h5>
+					safety
+					 - £<input  class="costs" type="number" name="safety" id="safety">
+					 extra -<input readonly="readonly" class="days" type="number" name="safety-num" id="safety-num" value="0.15">
+
+				</h5>
+			</div>
+		</div>
+		
+
+		<div class="totals">
+		<div class="six columns">
+
+			<h2>Event Costs</h2>
+
+				<h5 >£<input readonly="readonly" class="total" id="event-sum" type="number" name="total"></h5>
+
+		</div>	
+
+		<div class="six columns">
+
+			<h2>Total Expenses</h2>
+
+				<h5 >£<input readonly="readonly" class="total" id="expense-sum" type="number" name="total"></h5>
+
+		</div>
+		</div>
+
+			<h2>Total Costs</h2>
+
+				<h5 >£<input readonly="readonly" class="total" id="total-costs" type="number"></h5>
+				<!-- <button class="calc">calculate</button> -->
+		
+		
+
+		
+	</section>
+
+<!--   - - - - - - - - - - - - - - - - -  ABOUT YOU - - - - - - - - - - - - - - -  -->
+	<section class="aboutYou">
+
+	<h2 class="sub">About You</h2>
+	<h4>A little information about your earnings</h4>
+
+	
+
+		<div class="holder">
+			<div class="six columns">
+				<div class="edit">
+
+					<h5>
+						Salary (yr) 
+						- £<input class="salary" type="number" name="salary" id="salary">
+					</h5>
+					<h5>
+					Tax Band - <input class="salary" type="text" name="tax-band" id="tax-band" readonly="readonly">
+					</h5>
+				</div>
+			</div>
+
+			
+			<div class="six columns">
+				<div class="fixed">
+					<h5>
+						Tax Free - £<input class="salary" type="number" name="tax-free" id="tax-free" value="10000" readonly="readonly">
+					</h5>
+					<h5>
+						Taxable - £<input class="salary" type="number" name="taxable" id="taxable" readonly="readonly" min="0">
+					</h5>
+					<h5>
+						After Tax - £<input class="salary" type="number" name="after-tax" id="after-tax" readonly="readonly">
+					</h5>
+				
+				
+				</div>
+			</div>
+		
+		</div>
+
+		<h2>Total Take-Home Salary</h2>
+		<h5>
+			 £<input class="salary" type="number" name="takehome" id="takehome" readonly="readonly">
+		</h5>
+		<h2>Monthly Take-Home Salary</h2>
+		<h5>
+			 £<input class="salary" type="number" name="mtakehome" id="mtakehome" readonly="readonly">
+		</h5>
+		
+	</section>
+
+<!--  - - - - - - - - - - - - - - - - - LIVING  - - - - - - - - - - - - - - - - -->
+	<section class="living">
+
+		<h2 class="sub">Living Costs</h2>
+		<h4>Select a timescale and is corresponding cost, for example - "a weekly food shop of £60" <br>select week from the dropdown and enter 60 into costs </h4>
+
+	<div class="life">
+
+<!--  - - - - - - - - - - bills  - - - - - - -  -->
+		<div class="six columns">
+
+			<h2>Household Bills</h2>
+			<h5>
+				<form action="action_page.php" class="pay-form" id="bills-form">
+				  <select class="bills" class="scale">
+				    <option class="pay-type" value="Week">Week</option>
+				    <option class="pay-type" value="Month">Month</option>
+				    <option class="pay-type" value="Year">Year</option>
+
+				  </select>
+				</form>
+			</h5>
+			<h5>
+				Cost - £<input class="living-cost" type="number" id="bills" >
+			</h5>
+			<h5 class="m-av">
+				Monthly Av. - £<input class="mliving-cost" type="number" id="bills-av" readonly="readonly">
+			</h5>
+
+		</div>
+
+<!--  - - - - - - - - - - - fuel - - - - - - - - -  -->
+		<div class="six columns">	
+
+			<h2>Car Fuel</h2>
+			<h5>
+				<form action="action_page.php" class="pay-form" id="fuel-form">
+				  <select class="fuel" class="scale">
+				    <option class="pay-type" value="Week">Week</option>
+				    <option class="pay-type" value="Month">Month</option>
+				    <option class="pay-type" value="Year">Year</option>
+
+				  </select>
+				</form>
+			</h5>
+			<h5>
+				Cost - £<input class="living-cost" type="number" id="fuel" >
+			</h5>
+			<h5 class="m-av">
+				Monthly Av. - £<input class="mliving-cost" type="number" id="fuel-av" readonly="readonly">
+			</h5>
+		</div>
+
+	</div>
+	<div class="life">	
+
+<!--  - - - - - - - - -Road Tax - - - - - - - - - -->
+		<div class="six columns">	
+			<h2>Road Tax</h2>
+			<h5>
+				<form action="action_page.php" class="pay-form" id="roadtax-form">
+				  <select class="roadtax" class="scale">
+				    <option class="pay-type" value="Week">Week</option>
+				    <option class="pay-type" value="Month">Month</option>
+				    <option class="pay-type" value="Year">Year</option>
+
+				  </select>
+				</form>
+			</h5>
+			<h5>
+				Cost - £<input class="living-cost" type="number" id="roadtax" >
+			</h5>
+			<h5 class="m-av">
+				Monthly Av. - £<input class="mliving-cost" type="number" id="roadtax-av" readonly="readonly">
+			</h5>
+		</div>
+
+<!--  - - - - - - - - - - - MOT - - - - - - - -  -->
+		<div class="six columns">	
+			<h2>MOT</h2>
+			<h5>
+				<form action="action_page.php" class="pay-form" id="mot-form">
+				  <select class="mot" class="scale">
+				    <option class="pay-type" value="Week">Week</option>
+				    <option class="pay-type" value="Month">Month</option>
+				    <option class="pay-type" value="Year">Year</option>
+
+				  </select>
+				</form>
+			</h5>
+			<h5>
+				Cost - £<input class="living-cost" type="number" id="mot" >
+			</h5>
+			<h5 class="m-av">
+				Monthly Av. - £<input class="mliving-cost" type="number" id="mot-av" readonly="readonly">
+			</h5>
+		</div>
+
+	</div>
+	<div class="life">
+
+<!--  - - - - - - -  - - Car Service - - - - - - -  -->
+		<div class="six columns">	
+			<h2>Car Service</h2>
+			<h5>
+				<form action="action_page.php" class="pay-form" id="service-form">
+				  <select class="service" class="scale">
+				    <option class="pay-type" value="Week">Week</option>
+				    <option class="pay-type" value="Month">Month</option>
+				    <option class="pay-type" value="Year">Year</option>
+
+				  </select>
+				</form>
+			</h5>
+			<h5>
+				Cost - £<input class="living-cost" type="number" id="service" >
+			</h5>
+			<h5 class="m-av">
+				Monthly Av. - £<input class="mliving-cost" type="number" id="service-av" readonly="readonly">
+			</h5>
+		</div>
+
+<!--  - - - - - - - - - - - Car Repairs - - - - - - - -->
+		<div class="six columns">	
+			<h2>Car Repairs</h2>
+			<h5>
+				<form action="action_page.php" class="pay-form" id="repairs-form">
+				  <select class="repairs" class="scale">
+				    <option class="pay-type" value="Week">Week</option>
+				    <option class="pay-type" value="Month">Month</option>
+				    <option class="pay-type" value="Year">Year</option>
+
+				  </select>
+				</form>
+			</h5>
+			<h5>
+				Cost - £<input class="living-cost" type="number" id="repairs" >
+			</h5>
+			<h5 class="m-av">
+				Monthly Av. - £<input class="mliving-cost" type="number" id="repairs-av" readonly="readonly">
+			</h5>
+		</div>
+
+	</div>
+	<div class="life">
+		
+<!--  - - - - - - - - - -  - Food - - - - - - - - - - -->
+		<div class="six columns">	
+			<h2>Food</h2>
+			<h5>
+				<form action="action_page.php" class="pay-form" id="food-form">
+				  <select class="food" class="scale">
+				    <option class="pay-type" value="Week">Week</option>
+				    <option class="pay-type" value="Month">Month</option>
+				    <option class="pay-type" value="Year">Year</option>
+
+				  </select>
+				</form>
+			</h5>
+			<h5>
+				Cost - £<input class="living-cost" type="number" id="food" >
+			</h5>
+			<h5 class="m-av">
+				Monthly Av. - £<input class="mliving-cost" type="number" id="food-av" readonly="readonly">
+			</h5>
+		</div>
+
+<!--  - - - - - - - - - -  - - Nights Out - - - - - -  -->
+		<div class="six columns">	
+			<h2>Nights Out</h2>
+			<h5>
+				<form action="action_page.php" class="pay-form" id="nightsout-form">
+				  <select class="nightsout" class="scale">
+				    <option class="pay-type" value="Week">Week</option>
+				    <option class="pay-type" value="Month">Month</option>
+				    <option class="pay-type" value="Year">Year</option>
+
+				  </select>
+				</form>
+			</h5>
+			<h5>
+				Cost - £<input class="living-cost" type="number" id="nightsout" >
+			</h5>
+			<h5 class="m-av">
+				Monthly Av. - £<input class="mliving-cost" type="number" id="nightsout-av" readonly="readonly">
+			</h5>
+		</div>
+			
+	</div>
+	<div class="life">
+
+ <!-- - - - - - - - - - - General Spending - - - - - - -->
+		<div class="six columns">	
+			<h2>General Spending</h2>
+			<h5>
+				<form action="action_page.php" class="pay-form" id="general-form">
+				  <select class="general" class="scale">
+				    <option class="pay-type" value="Week">Week</option>
+				    <option class="pay-type" value="Month">Month</option>
+				    <option class="pay-type" value="Year">Year</option>
+
+				  </select>
+				</form>
+			</h5>
+			<h5>
+				Cost - £<input class="living-cost" type="number" id="general" >
+			</h5>
+			<h5 class="m-av">
+				Monthly Av. - £<input class="mliving-cost" type="number" id="general-av" readonly="readonly">
+			</h5>
+		</div>
+		
+<!-- - - - - - - - - - - - Other Savings - - - - - - - -  -->
+		<div class="six columns">	
+			<h2>Other Savings</h2>
+			<h5>
+				<form action="action_page.php" class="pay-form" id="othersaving-form">
+				  <select class="othersaving" class="scale">
+				    <option class="pay-type" value="Week">Week</option>
+				    <option class="pay-type" value="Month">Month</option>
+				    <option class="pay-type" value="Year">Year</option>
+
+				  </select>
+				</form>
+			</h5>
+			<h5>
+				Cost - £<input class="living-cost" type="number" id="othersaving" >
+			</h5>
+			<h5 class="m-av">
+				Monthly Av. - £<input class="mliving-cost" type="number" id="othersaving-av" readonly="readonly">
+			</h5>
+		</div>
+			
+	</div>
+
+	<h2>Average Total Monthly Spending</h2>
+		<h5>
+			 £<input class="salary" type="number" name="mspend" id="mspend" readonly="readonly">
+		</h5>
+		<button id="calc-mspend">Calculate</button>
+
+	</section>
+
+<!-- - - - - - - - - - - - -  YOUR SIMPLE-STASH - - - - - - - - - - - - - - - - -  -->
+
+	<section class="your-secretstash">
+
+		<h2 class="sub">Recap Final Amounts</h2>
+
+		<div class="finalcalc">
+
+			<div class="six columns">
+
+				<h2>Monthly Take-Home Salary</h2>
+				<h5>
+				 	£<input class="fcalc" type="number" id="ftakehome" readonly="readonly">
+				</h5>	
+				
+			</div>
+			<div class="six columns">
+
+				<h2>Av. Total Monthly Spending</h2>
+				<h5>
+					 £<input class="fcalc" type="number" id="fspend" readonly="readonly">
+				</h5>
+
+			</div>
+		</div>
+		
+
+			<h2>Remaining Monthly Salary</h2>
+				<h5>
+					 £<input class="fcalc" type="number" id="fremain" readonly="readonly">
+				</h5>
+
+		<h1 class="secretstash">Your Simple Stash</h1>
+
+		<div class="chooser">
+
+			<div class="six columns">
+
+				<h2>Realistic Saving Amount</h2>
+				<h4>Total amount you can save after spendings</h4>
+				<h5>
+					 £<input class="fcalc" type="number" id="freal" readonly="readonly">
+				</h5>
+			</div>
+			<div class="six columns">
+			
+				<h6>Amount you wish to save</h6>
+				<h4>must be higher than monthly contract pay if on finance</h4>
+				<h5>
+					 £<input class="fcalc" type="number" id="fchoose" readonly="readonly">
+				</h5>
+				<h5>
+					<input type="range" id="myRange"> 
+				</h5>
+			</div>
+			
+		</div>
+		<div class="result">
+
+			<div class="six columns">
+
+				<h2 class="needed">Total Event Cost</h2>
+				<h4>How much in total you will have to pay</h4>
+				<h5>
+					 £<input class="fcalc" type="number" id="fcar" readonly="readonly">
+				</h5>
+			</div>
+			<div class="six columns">
+			
+				<h6>How Long It will Take to Save </h6>
+				<h4>Either outright or initial deposit</h4>
+				<h5>
+					<input class="fcalc" type="number" id="fmonths" readonly="readonly">
+				</h5>
+				<h5>
+					Months
+				</h5>
+			</div>
+			
+		</div>
+	</section>
+	</body>
+
+	<footer>
+			<a href="https://github.com/jjthompson07"><img src="images/github.png"></a>
+			<a href="https://linkedin.com/in/josh-thompson-07"><img src="images/linked.png"></a>
+	</footer>
+
+	
+		
+	
+	<script type="text/javascript" src="JS/jquery.js"></script>
+	<script type="text/javascript" src="JS/event.js"></script>
+
+
+
+</html>

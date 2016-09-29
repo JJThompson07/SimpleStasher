@@ -1,0 +1,916 @@
+@import url(https://fonts.googleapis.com/css?family=Jura:400,500,600,300);
+
+body {
+	font-family: 'Jura', sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #555555;
+	text-align: center;
+
+}
+
+h1 {
+	font-weight: 600;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 32px;
+	color: rgba(0,0,0,1);
+	padding: 40px 0 0 0;
+}
+
+h3 {
+	font-size: 28px;
+	font-weight: 500;
+
+
+}
+
+h4 {
+	font-weight: 300;
+	font-size: 16px;
+	color: rgba(50,50,50,0.7);
+	margin: 0 auto 0 auto;
+	text-transform: capitalize;
+	max-width: 75%;
+}
+
+h5 {
+	text-transform: capitalize;
+	color: rgba(0,0,150,1);
+	font-weight: 500;
+	font-size: 20px;
+	padding: 5px 0 5px 0;
+}
+
+h6 {
+	text-transform: capitalize;
+	color: rgba(0,0,150,1);
+	font-weight: 600;
+	font-size: 32px;
+	padding: 40px 0 0 0;
+}
+
+input {
+	color: rgba(50,50,50,1);
+	background-color: rgba(255,255,255,0.1);
+	border: solid;
+	border-style: solid;
+	border-width: 3px;
+	text-align: center;
+	max-width: 15%;
+	margin-left: 10px;
+	border-color: rgba(183,221,255,0.7);
+}
+
+
+
+header {
+	padding: 50px 0 0 0;
+	background-color: rgba(183,221,255,0.7);
+	height: 180px;
+	width: 100vw;
+
+
+}
+
+header a {
+	text-decoration: none;
+}
+
+nav {
+	height: 75px;
+	background-color: rgba(240,240,240,1);
+	overflow: hidden;
+
+}
+
+nav a {
+	color: rgba(0,0,150,1);
+	font-weight: 400;
+	font-size: 22px;
+	text-transform: none;
+	text-decoration: none;
+	padding: 5px 5px 5px 5px;
+	margin: 11px 15px 11px 15px;
+	background-color: rgba(240,240,240,1);
+	min-width: 15vw;
+	display: inline-block;
+	border: solid;
+	border-style: outset;
+	border-width: 5px;
+	border-radius: 10px;
+	border-color: rgba(183,221,255,0.7);
+
+}
+
+nav a:hover {0a0r190d.25color: rgba(225,225,255,1);
+	border-color: rgba(0,0,150,0.3);
+}
+
+/* - - - - - - - - - - - SECTIONS - - - - - - - - - - - - - - - - - -  -  - */
+
+section {
+	padding: 10px 0 0 0;
+	width: 85vw;
+	background-color: rgba(240,240,240,1);
+	margin: 0 auto 0 auto;
+}
+
+section a {
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 28px;
+	color: rgba(0,0,150,1);
+
+}
+
+.aboutYou {
+	height: 550px;
+}
+
+.living {
+	height: 1500px;
+}
+
+.your-secretstash {
+	height: 1000px;
+}
+
+.holisave {
+	height : 1050px;
+}
+
+.carsave {
+	height: 650px;
+}
+
+.housesave {
+	height: 650px;
+}
+
+.eventsave {
+	height: 1200px;
+
+}
+
+.finance, .mortgage {
+	height: 700px;
+}
+
+
+
+button {
+	border-color: rgba(183,221,255,.5);
+	border-radius: 5%;
+	border-width: 3px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	background-color: rgba(0,0,0,0);
+	width: 75px;
+	height: 25px;
+	margin: 10px 0 0 0;
+}
+
+button:hover {
+	border-color: rgba(0,0,150,0.5);
+	background-color: rgba(0,0,0,0.05);
+
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+#trigger {
+	background-color: rgba(183,221,255,0.7);
+	padding: 5px 0 5px 0;
+	width: 100vw;
+	border-bottom: solid;
+	border-color: rgba(20,20,51,0.3)
+}
+
+#trigger img {
+	border:solid;
+	border-style: outset;
+	border-color: rgba(0,0,150,0.3);
+	border-width: 3px;
+	border-radius:5px;
+}
+
+#trigger img:hover {
+	border-color: rgba(0,0,150,0.1);
+}
+
+
+
+#instruct {
+	margin: 0 0 20px 0;
+}
+
+.tile {
+	margin: 0 auto 0 auto;
+}
+
+.tile img {
+	max-height: 225px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3)
+}
+
+#box {
+	margin: 0 auto 0 auto;
+	padding-left: 6.35%;
+}
+
+#box img {
+	
+	box-shadow: 0 0 15px rgba(0,0,0,0.3)
+}
+
+#under {
+	max-width: 50%;
+	margin: 0 auto 0 auto;
+}
+
+.logo {
+	padding: 0 0 20px 0;
+}
+
+p {
+	max-width: 75%;
+	margin: 0 auto 0 auto;
+}
+
+footer {
+	background-color: rgba(183,221,255,0.7);
+	height: 70px;
+	padding: 10px 0 10px 0;
+	width: 100vw;
+}
+footer img {
+	max-height: 50px;
+}
+
+#logo-img {
+	max-width: 85%;
+}
+
+
+
+/* sliders for index.html - - - - - - - - - - - - - - - - -- - - - - - - - - - - - - - - - - - - */
+#slider1 {
+    width: 225px;
+    height: 225px;
+    overflow: hidden;
+}
+
+#slider1 .slides {
+    display: block;
+    width: 900px;
+    height: 225px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider1 .slide {
+    float: left;
+    list-style-type: none;
+    width: 225px;
+    height: 225px;
+}
+
+#slider2 {
+    width: 472.8px;
+    height: 225px;
+    overflow: hidden;
+}
+
+#slider2 .slides {
+    display: block;
+    width: 472.5px;
+    height: 900px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider2 .slide {
+    float: left;
+    list-style-type: none;
+    width: 472.8px;
+    height: 225px;
+}
+
+#slider3 {
+    width: 225px;
+    height: 225px;
+    overflow: hidden;
+}
+
+#slider3 .slides {
+    display: block;
+    width: 900px;
+    height: 225px;
+    margin: 0;
+    position: relative;
+    right: 675px;
+    padding: 0;
+}
+
+#slider3 .slide {
+    float: left;
+    list-style-type: none;
+    width: 225px;
+    height: 225px;
+}
+
+#slider4 {
+    width: 512.8px;
+    height: 305px;
+    overflow: hidden;
+}
+
+#slider4 .flicks {
+    display: block;
+    width: 2072.8px;
+    height: 305px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider4 .flick {
+    float: center;
+    list-style-type: none;
+    width: 512.8px;
+    height: 305px;
+
+}
+
+
+/* holiday.html- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.sub {
+	color: rgba(0,0,150,1);
+	background-color: rgba(0,0,0,0.1);
+	padding: 0 0 2px 0;
+	margin: 35px 0 25px 0;
+	font-size: 38px;
+}
+
+.haze { 
+	height: 300px;
+	padding: 50px 0 0 0;
+}
+
+#fazer img {
+	width: 20%;
+}
+
+#fazer .faze {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.fazes {
+	max-width: 1000px;
+	margin: 0 auto 0 auto;
+}
+
+#faze1 {
+	position: absolute;
+	top: 0;
+	left: 4%;
+	z-index: 9;
+}
+
+#faze2 {
+	position: absolute;
+	top: 0;
+	left: 28%;
+	z-index: 6;
+}
+
+#faze3 {
+	position: absolute;
+	top: 0;
+	left: 52%;
+	z-index: 3;
+}
+
+#faze4 {
+	position: absolute;
+	top: 0;
+	left: 76%;
+	z-index: 0;
+}
+
+/* -  - - - - car.html page only  - - - - - - - - - - - - - - - - - - - - - - */
+#cazer .faze {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#cazer img {
+	width: 30%;
+}
+
+#caze1 {
+	position: absolute;
+	top: 0;
+	left: 2.5%;
+	z-index: 9;
+}
+
+#caze2 {
+	position: absolute;
+	top: 0;
+	left: 35%;
+	z-index: 6;
+}
+
+#caze3 {
+	position: absolute;
+	top: 0;
+	left: 67.5%;
+	z-index: 3;
+}
+
+.hp {
+	font-weight: 500;
+}
+
+.hp {
+	color: rgba(183,221,255,0.7);
+	
+}
+
+.total-cost-head {
+	margin: 50px 0 0 0;
+}
+
+/* -  - - - - house.html page only  - - - - - - - - - - - - - - - - - - - - - - */
+#hozer .faze {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#hozer img {
+	width: 30%;
+}
+
+#hoze1 {
+	position: absolute;
+	top: 0;
+	left: 2.5%;
+	z-index: 9;
+}
+
+#hoze2 {
+	position: absolute;
+	top: 0;
+	left: 35%;
+	z-index: 6;
+}
+
+#hoze3 {
+	position: absolute;
+	top: 0;
+	left: 67.5%;
+	z-index: 3;
+}
+
+.hoze { 
+	height: 450px;
+	padding: 50px 0 0 0;
+}
+
+/* -  - - - - event.html page only  - - - - - - - - - - - - - - - - - - - - - - */
+#eazer .faze {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+#eazer img {
+	width: 30%;
+}
+
+#eaze1 {
+	position: absolute;
+	top: 0;
+	left: 2.5%;
+	z-index: 9;
+}
+
+#eaze2 {
+	position: absolute;
+	top: 0;
+	left: 35%;
+	z-index: 6;
+}
+
+#eaze3 {
+	position: absolute;
+	top: 0;
+	left: 67.5%;
+	z-index: 3;
+}
+
+.eaze { 
+	height: 300px;
+	padding: 50px 0 0 0;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+.costs {
+	max-width: 100px;
+
+}
+
+.inputs {
+	display: inline;
+	text-align: right;
+}
+
+.airport {
+	text-align: center;
+}
+
+.holiday, .expenses, .edit, .fixed, .life{
+	display: inline;
+	text-align: right;
+}
+
+.holiday h5, .expenses h5, .edit h5, .fixed h5{
+	margin: 5px 15% 5px 0;
+}
+
+.financial {
+	display: inline;
+	text-align: right;
+}
+
+.financial h5{
+	margin: 5px 15% 5px 0;
+}
+
+
+.secretstash {
+	margin: 50px 0 0 0;
+	background-color: rgba(183,233,255,0.6);
+}
+
+/* - - - - - - - - - -  Input editing  - - - - - - - - - - - - - - - - - - - - - */
+
+.inputs input {
+	margin-right: 35%;
+	border-color: rgba(0,0,190,.25);
+	min-width: 150px;
+}
+
+.holiday input, .fixed input, .financial input {
+	margin-right: 5%;
+	border-color: rgba(0,0,190,.25);
+	min-width: 125px;
+
+}
+
+.expenses input {
+	margin-right: 2.5%;
+	border-color: rgba(0,0,190,.25);
+	min-width: 50px;
+
+}
+
+.total {
+	min-width: 200px;
+}
+
+.living input {
+
+	margin-right: 25%;
+	border-color: rgba(0,0,190,.25);
+	min-width: 50px;
+	max-width: 150px;
+}
+
+
+ .edit input {
+	margin-right: 5%;
+	border-color: rgba(0,0,190,.25);
+	min-width: 150px;
+	max-width: 150px;
+
+}
+
+input:read-only {
+	border-color: rgba(0,0,0,0.3);
+}
+
+#mspend {
+	margin-right: 0%;
+}
+
+/* car only */
+.car-initial input {
+	margin: 10px 10px 10px 0;
+}
+
+/* house only */
+.house-initial input {
+	margin: 10px 10px 10px 0;
+}
+
+/* event only */
+.event-initial input {
+	margin: 10px 10px 10px 0;
+}
+
+#monthly-payments {
+
+}
+
+#location {
+	min-width: 150px
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.fcalc {
+	min-width: 150px;
+}
+
+.catagories {
+	display: inline;
+}
+
+.catagories a {
+	text-transform: capitalize;
+	color: rgba(0,0,0,1);
+	font-weight: 500;
+	font-size: 20px;
+	margin: 5px 5% 5px 5%;
+}
+
+.chooser {
+
+}
+
+
+.pay-form {
+	text-align: center;
+}
+
+
+
+div h2 {
+	text-align: center;
+}
+
+#fmonths, #fchoose {
+	color: rgba(0,0,150,0.7);
+	margin-right: 5px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - -  media screens  - - - - - - - - - - - - - -*/
+
+
+@media screen and (max-width: 1150px) {
+
+	.twenty {
+		width:20%;
+	}
+
+	.forty {
+		width:40%;
+	}
+
+	.fortyfive {
+		width: 90%;
+	
+	}
+
+	#below {
+		margin: 0 auto 0 auto;
+		width: 95%;
+		min-height: 267px;
+
+	}
+
+	#below img {
+		width 90%;
+		max-width: 375px;
+	}
+
+	.mediaimg {
+		width: 90%;
+	}
+
+	.your-secretstash {
+	min-height: 1100px;
+	}
+
+	
+	h2, h6 {
+	font-size: 26px;
+	}
+
+	h4 {
+		font-size: 14px;
+	}
+
+	h5 {
+	font-size: 16px;
+	
+	}
+	.costs {
+	max-width: 75px;
+	}
+
+	.expenses h5 {
+		margin-right: 5px;
+
+	}
+
+	.totals input {
+		min-width: 150px;
+	}
+
+	.salary {
+		min-width: 150px;
+	}
+
+	
+
+
+}
+
+@media screen and (max-width: 950px) {
+
+	.living input {
+
+	margin-right: 10%;
+	
+}
+
+}
+
+/* - - - - - -- - - - - - - phone - - - - - - - - - - - - - - - - -*/
+
+
+@media screen and (max-width: 780px) {
+
+	nav {
+		height: 341.5px;
+		padding: 8.5px 0 0 0;
+	}
+	nav a {
+		display: block;
+		width: 40%;
+		margin: 8.5px auto 8.5px auto;
+	}
+
+	#left img, #right img {
+		max-width: 225px;
+	}
+
+	.your-secretstash {
+	min-height: 1000px;
+	}
+
+	h2, h6 {
+	font-size: 22px;
+	}
+
+	h4 {
+		font-size: 14px;
+	}
+
+	h5 {
+	font-size: 14px;
+	/*min-width: 310px;*/
+	
+	}
+
+	.days {
+		width: 12.5%;
+		margin-right: 5%;
+	}
+
+	.edit h5 input, .fixed h5 input  {
+		max-width: 30%;
+	}
+
+	.expenses h5 {
+		margin-right: 2px;
+		min-width: 270px;
+		font-size: 12px;
+	}
+
+	.costs {
+	max-width: 50px;
+	}
+
+	body {
+		overflow-wrap: 
+	}
+
+	.living-cost, .mliving-cost {
+		margin-right: 5px;
+
+	}
+
+	.life input {
+		max-width: 100px;
+	}
+
+	.totals input {
+		min-width: 100px;
+	}
+
+	.financial h5, .holiday h5, .edit h5, .fixed h5{
+		margin: 5px 0 5px 0;
+	}
+
+	.holisave {
+		height: 1050px;
+	}
+
+
+	
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+	.expenses h5 {
+		margin-right: 20%;
+		min-width: 320px;
+		font-size: 14px;
+	}
+
+	.costs {
+	max-width: 50px;
+	}
+
+	.your-secretstash {
+	min-height: 1300px;
+	}
+
+	.haze { 
+	height: 200px;
+	padding: 50px 0 0 0;
+	}
+
+	.hoze, .eaze {
+		height: 250px;
+	}
+
+	.inputs input {
+	margin-right: 15%;
+	
+}
+
+	.life input {
+		max-width: 200px;
+	}
+
+	.carsave {
+		height: 1600px;
+	}
+
+	.finance, .mortgage {
+		height: 1000px;
+	}
+
+	
+	.living {
+		height: 2250px;
+	}
+
+	.financial h5, .holiday h5, .edit h5, .fixed h5{
+		margin: 5px 15% 5px 0;
+	}
+
+	.living input {
+
+		margin-right: 25%;
+		
+	}
+	.eventsave {
+		height: 1550px;
+	}
+
+	.holisave {
+		min-height: 1300px;
+	}
+
+	
+
+}
+
